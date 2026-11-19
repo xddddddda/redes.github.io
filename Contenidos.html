@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PowerUP | Redes de Datos I</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top">
+<header>
+<nav class="navbar">
+<a href="index.html" class="logo"><img src="img/logo.jpg" alt="PowerUP logo"></a>
+<input type="checkbox" id="menu-toggle" class="menu-toggle">
+<label for="menu-toggle" class="menu-icon">☰</label>
+<ul class="nav-links">
+<li><a href="index.html">Inicio</a></li>
+<li><a href="servicios.html">Servicios</a></li>
+<li><a class="active" href="Contenidos.html">Contenidos</a></li>
+<li><a href="nosotros.html">Nosotros</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<section class="hero-content">
+<h1>Centro de Conocimientos PowerUP</h1>
+<p>Información técnica sobre redes de datos, infraestructura informática, conectividad y tecnologías utilizadas en soluciones profesionales.</p>
+</section>
+
+<section class="section-index">
+<h2>Índice de contenidos</h2>
+<ol>
+<li><a href="#contexto">Contexto de la conectividad</a></li>
+<li><a href="#que-es-una-red">¿Qué es una red de datos?</a></li>
+<li><a href="#estructura-red">Estructura de una red</a></li>
+<li><a href="#protocolos-modelos">Protocolos y Modelo OSI</a></li>
+<li><a href="#viaje-informacion">El viaje de la información</a></li>
+<li><a href="#clasificacion">Clasificación de redes</a></li>
+<li><a href="#topologias">Topologías de red</a></li>
+<li><a href="#infraestructura-fisica">Infraestructura física</a></li>
+<li><a href="#transmisiones-inalambricas">Transmisiones inalámbricas</a></li>
+<li><a href="#equipos">Equipos de conectividad</a></li>
+<li><a href="#arquitecturas">Arquitecturas y estándares</a></li>
+<li><a href="#red-tipo-estrella">Red tipo estrella</a></li>
+<li><a href="#instalacion-pequena">Pasos para la instalación</a></li>
+<li><a href="#parametros-config">Parámetros de configuración</a></li>
+<li><a href="#elementos-red">Elementos y herramientas</a></li>
+<li><a href="#inalambrico-vs-cableado">Inalámbrico vs cableado</a></li>
+<li><a href="#cableado">Cableado estructurado</a></li>
+<li><a href="#tecnologia-sociedad">Tecnología y sociedad</a></li>
+</ol>
+</section>
+
+<section class="content-section" id="contexto">
+<h2>Contexto de la conectividad</h2>
+<p>Antes de explicar cómo funciona una red, es vital comprender su impacto social. Las redes sociales y las aplicaciones digitales recolectan datos personales como nombres, gustos y sentimientos para crear un perfil de cada usuario. Con estos perfiles, los algoritmos seleccionan contenido para mantener a la persona conectada el mayor tiempo posible, lo que puede derivar en una dependencia tecnológica y en un “estado zombi” de consumo pasivo.</p>
+<p>Esta presión digital afecta especialmente a los jóvenes, que comparan su vida con versiones idealizadas de otras personas. Por eso en PowerUP no solo diseñamos redes eficientes, sino que también consideramos la privacidad, la seguridad y el uso responsable de los datos.</p>
+<div class="cards">
+<div class="card">
+<h3>Privacidad y datos</h3>
+<p>Los datos que circulan en una red pueden ser personales. Un diseño profesional debe protegerlos y evitar filtraciones.</p>
+</div>
+<div class="card">
+<h3>Perfiles digitales</h3>
+<p>Las plataformas digitales construyen perfiles para mostrar contenido relevante, pero también deben respetar la transparencia y el consentimiento.</p>
+</div>
+<div class="card">
+<h3>Uso consciente</h3>
+<p>PowerUP promueve redes que conectan a las personas sin fomentar el consumo excesivo o la dependencia tecnológica.</p>
+</div>
+</div>
+</section>
+
+<section class="content-section" id="que-es-una-red">
+<h2>¿Qué es una red de datos?</h2>
+<p>Una red de datos es un conjunto de equipos conectados por medios físicos o inalámbricos con el fin de compartir información, recursos (como impresoras y discos) y servicios (internet, correo electrónico, aplicaciones). A cada equipo conectado se le denomina nodo.</p>
+<p>Para que la información viaje por estas conexiones, primero debe convertirse en lenguaje digital. Las señales analógicas, como la voz, se transforman en bits —0 y 1— que las computadoras pueden procesar. La capacidad de los datos se mide con unidades de almacenamiento:</p>
+<ul>
+<li><strong>Bit:</strong> unidad más pequeña, puede ser 0 o 1.</li>
+<li><strong>Byte:</strong> conjunto de 8 bits.</li>
+<li><strong>Escalas:</strong> KB, MB, GB, TB y hasta Brontobyte; se usan potencias de 10 o de 2 según la métrica.</li>
+</ul>
+<div class="content-highlight">
+<p>Estas definiciones son la base del trabajo técnico de PowerUP: entender cuánto datos puede mover una red, qué dispositivos necesita y cómo medir su rendimiento.</p>
+</div>
+</section>
+
+<section class="content-section" id="estructura-red">
+<h2>Estructura de una red</h2>
+<p>Al planificar una red, es fundamental considerar la estructura y la ubicación de los equipos dentro del ambiente laboral. Se debe decidir entre una infraestructura cableada o inalámbrica basándose en las necesidades de velocidad y estabilidad. Además, es vital que el espacio cuente con una instalación eléctrica en óptimas condiciones para soportar los equipos de conectividad.</p>
+</section>
+
+<section class="content-section" id="protocolos-modelos">
+<h2>El lenguaje de las redes: protocolos y modelos</h2>
+<p>Las redes funcionan mediante reglas claras llamadas protocolos. Para que dos dispositivos se entiendan necesitan estos protocolos; sin ellos, la comunicación sería imposible. En PowerUP aplicamos estos estándares para garantizar que cada paquete de datos llegue donde debe.</p>
+<div class="cards">
+<div class="card">
+<h3>Protocolos clave</h3>
+<p><strong>TCP/IP:</strong> protocolo base para la comunicación en internet.<br><strong>HTTP:</strong> para el intercambio de información entre navegador y servidor web.<br><strong>DNS:</strong> traduce nombres de dominio (como google.com) en direcciones IP.<br><strong>Ethernet:</strong> estándar dominante en redes cableadas que usa CSMA/CD para evitar colisiones de datos.</p>
+</div>
+<div class="card">
+<h3>Modelo OSI</h3>
+<p>El Modelo OSI organiza la comunicación en siete capas, facilitando la comprensión y solución de problemas:</p>
+<p>1. Física<br>2. Enlace de datos<br>3. Red<br>4. Transporte<br>5. Sesión<br>6. Presentación<br>7. Aplicación</p>
+</div>
+</div>
+<div class="content-highlight">
+<p>Esta lógica en capas nos permite separar el trabajo de cada dispositivo y resolver fallas de manera más rápida y ordenada.</p>
+</div>
+</section>
+
+<section class="content-section" id="viaje-informacion">
+<h2>El viaje de la información</h2>
+<p>Cuando un usuario solicita acceso a un sitio web, el proceso sigue un camino estructurado que une equipos, protocolos y proveedores. En PowerUP entendemos cada paso para garantizar una experiencia fluida.</p>
+<ul>
+<li><strong>Usuario:</strong> solicita el sitio en el navegador.</li>
+<li><strong>Sistema operativo y tarjeta de red:</strong> procesan la solicitud y la envían al proveedor de internet.</li>
+<li><strong>Proveedor de Internet (ISP):</strong> recibe la petición y la dirige al servidor web.</li>
+<li><strong>Servidor web:</strong> recibe la solicitud, procesa la información y prepara la respuesta.</li>
+<li><strong>Retorno:</strong> el ISP envía los datos de vuelta al equipo del usuario y el navegador los muestra.</li>
+</ul>
+<div class="content-highlight">
+<p>Este recorrido muestra cómo el navegador, el hardware, el ISP y el servidor trabajan en conjunto. Cada paso depende de protocolos y de una infraestructura confiable.</p>
+</div>
+</section>
+
+<section class="content-section" id="clasificacion">
+<h2>Clasificación de redes</h2>
+<p>Las redes se clasifican según su cobertura, su topología y la relación funcional entre los dispositivos. Esta clasificación nos permite elegir el diseño correcto, desde una red doméstica hasta una red de alcance mundial.</p>
+<div class="cards">
+<div class="card">
+<h3>Por cobertura</h3>
+<p><strong>PAN:</strong> red de área personal para pocos metros, como dispositivos Bluetooth y móviles.<br><strong>LAN:</strong> red local dentro de una oficina, hogar o empresa.<br><strong>MAN:</strong> red metropolitana que conecta varias LAN dentro de una ciudad.<br><strong>WAN:</strong> red de gran alcance que conecta regiones y países; internet es su ejemplo más claro.</p>
+</div>
+<div class="card">
+<h3>Por topología</h3>
+<p><strong>Bus:</strong> todos los nodos comparten un único cable principal.<br><strong>Anillo:</strong> los nodos forman un circuito cerrado y la señal circula de uno al otro.<br><strong>Estrella:</strong> cada equipo se conecta a un punto central como un switch.<br><strong>Jerárquica:</strong> topología en árbol que combina ramas y enlaces troncales para ampliar la red.<br><strong>Híbrida:</strong> combina varias topologías para aprovechar las ventajas de cada una, como mayor rendimiento y escalabilidad.</p>
+</div>
+<div class="card">
+<h3>Por relación funcional</h3>
+<p><strong>Cliente-servidor:</strong> los clientes solicitan servicios y un servidor central los provee con control y seguridad.<br><strong>P2P:</strong> cada equipo actúa como cliente y servidor simultáneamente, útil para compartir recursos sin un servidor central.</p>
+</div>
+</div>
+<div class="content-highlight">
+<p>En PowerUP usamos estas clasificaciones para recomendar redes que sean seguras, escalables y adecuadas al uso real de cada cliente.</p>
+</div>
+</section>
+
+<section class="content-section" id="topologias">
+<h2>Topologías de red</h2>
+<p>Las topologías describen cómo se conectan físicamente los dispositivos. Elegir la correcta mejora la administración, el rendimiento y la disponibilidad de la red.</p>
+<div class="cards">
+<div class="card">
+<h3>Topología Estrella</h3>
+<p>Cada equipo se conecta a un punto central como un switch o hub. Si falla un cable, solo el equipo afectado pierde conexión y la red sigue funcionando.</p>
+</div>
+<div class="card">
+<h3>Topología Anillo</h3>
+<p>Los equipos forman un circuito cerrado y la señal se transmite de un nodo al siguiente. Era común en redes Token Ring y todavía se usa en sistemas especializados.</p>
+</div>
+<div class="card">
+<h3>Topología Bus</h3>
+<p>Un cable principal es compartido por todos los nodos. Es sencilla de instalar, pero una falla en el cable puede dejar fuera de servicio a toda la red.</p>
+</div>
+<div class="card">
+<h3>Topología Híbrida</h3>
+<p>Combina dos o más topologías para aprovechar sus ventajas. Por ejemplo, puede mezclar estrellas con una estructura jerárquica para mejorar escalabilidad y resiliencia.</p>
+</div>
+</div>
+<div class="content-highlight">
+<p>En redes modernas solemos preferir estructuras tipo estrella o híbridas porque facilitan la detección de fallas y permiten escalar sin perder control.</p>
+</div>
+</section>
+
+<section class="content-section" id="infraestructura-fisica">
+<h2>Infraestructura física</h2>
+<p>La red necesita un soporte físico para que los datos viajen. Los medios pueden ser guiados, como cables, o no guiados, como ondas de radio. La elección depende de la velocidad, el alcance y el entorno.</p>
+<div class="table-container">
+<table>
+<tr><th>Medio</th><th>Características</th></tr>
+<tr><td>Par Trenzado (UTP/STP)</td><td>Cables de cobre trenzados que reducen interferencias. Es el más usado en redes LAN por su costo y facilidad de instalación.</td></tr>
+<tr><td>Coaxial</td><td>Conductor central rodeado por blindaje. Fue popular en televisión por cable y redes antiguas, con alcance superior a los trenzados.</td></tr>
+<tr><td>Fibra Óptica</td><td>Transmite información con pulsos de luz. Ofrece gran velocidad, baja latencia y no se ve afectada por interferencias electromagnéticas.</td></tr>
+<tr><td>Medios no guiados</td><td>Usan ondas de radio, microondas, infrarrojos o satélites. Son ideales para lugares difíciles de cablear, pero dependen de la visibilidad y pueden sufrir barreras físicas.</td></tr>
+</table>
+</div>
+<p>Las instalaciones modernas combinan medios guiados e inalámbricos para lograr cobertura, rendimiento y fiabilidad. En PowerUP evaluamos cada entorno antes de seleccionar la infraestructura.</p>
+<div class="content-highlight">
+<p>El correcto dimensionamiento del medio de transmisión es clave para evitar cuellos de botella y asegurar que la red funcione según las necesidades reales del cliente.</p>
+</div>
+</section>
+
+<section class="content-section" id="transmisiones-inalambricas">
+<h2>Transmisiones inalámbricas</h2>
+<p>Las transmisiones inalámbricas permiten movilidad y flexibilidad, pero su alcance y rendimiento se ven condicionados por el entorno físico. A continuación se detallan valores orientativos de cobertura según el tipo de área:</p>
+<ul>
+<li><strong>Área Abierta (Vista directa):</strong> escenario ideal sin obstáculos; alcance confiable aproximado de 120 metros.</li>
+<li><strong>Área Semiabierta (Madera o material sintético):</strong> estos materiales reducen la señal; alcance confiable cercano a 30 metros.</li>
+<li><strong>Área Cerrada (Ladrillo):</strong> paredes de ladrillo reducen la señal significativamente; alcance confiable alrededor de 15 metros.</li>
+<li><strong>Área Obstruida (Metal y concreto):</strong> barrera severa; la señal puede ser nula o muy inestable, con alcance efectivo por debajo de 10 metros.</li>
+</ul>
+<p>Aunque ofrecen movilidad, las transmisiones inalámbricas suelen tener menor velocidad que las redes cableadas y se ven afectadas por interferencias físicas. Por ello, en entornos críticos recomendamos soluciones cableadas o arquitecturas mixtas que combinen fibra y Wi‑Fi planificada.</p>
+</section>
+
+<section class="content-section" id="equipos">
+<h2>Equipos de conectividad</h2>
+<p>Los equipos de conectividad son los elementos físicos que permiten que los datos se muevan entre nodos. Cada uno cumple un rol específico y su selección determina la eficiencia de la red.</p>
+<div class="cards">
+<div class="card">
+<h3>Hub</h3>
+<p>Repite la señal a todos los puertos por igual. Funciona como un altavoz que envía el mismo mensaje a todos, pero puede generar tráfico innecesario y colisiones.</p>
+</div>
+<div class="card">
+<h3>Switch</h3>
+<p>Envía los datos solo al dispositivo correcto, lo que mejora el rendimiento y reduce el tráfico. Es el elemento estándar en redes modernas.</p>
+</div>
+<div class="card">
+<h3>Puente (Bridge)</h3>
+<p>Puede unir segmentos o grupos de trabajo LAN; además permite dividir una red para aislar el tráfico o problemas entre segmentos, reduciendo dominios de colisión.</p>
+</div>
+<div class="card">
+<h3>Enrutador (Router)</h3>
+<p>Conecta redes o segmentos con distintos protocolos y arquitecturas. Un router no sólo conoce las direcciones de cada segmento, sino que determina el camino más rápido para el envío de datos y filtra el tráfico de difusión en el segmento local. En redes complejas, un bridge puede ser insuficiente; el router gestiona rutas, tablas y políticas para optimizar la comunicación global.</p>
+</div>
+<div class="card">
+<h3>Repetidor (Repeater)</h3>
+<p>Amplía la longitud de la red uniendo dos segmentos y amplificando la señal. Junto con la señal también amplifica el ruido, por lo que la red sigue siendo una sola y mantienen las limitaciones sobre el número de estaciones en el medio compartido.</p>
+</div>
+<div class="card">
+<h3>Pasarela (Gateway)</h3>
+<p>Dispositivo utilizado para interconectar redes con protocolos y arquitecturas completamente diferentes en varios niveles de comunicación. Al igual que un router, conecta redes, pero se emplea cuando es necesario transformar o traducir protocolos para permitir la comunicación entre sistemas heterogéneos; suele utilizarse como puerta de salida hacia redes más grandes, por ejemplo internet.</p>
+</div>
+</div>
+<div class="content-highlight">
+<p>Seleccionar correctamente hubs, switches, bridges, routers, repetidores y gateways es parte del diseño profesional que ofrece PowerUP para redes estables, eficientes y seguras.</p>
+</div>
+</section>
+
+<section class="content-section" id="arquitecturas">
+<h2>Arquitecturas y estándares</h2>
+<p>En la historia de las redes hubo varias arquitecturas. ARCNET trabajaba en bus y era lenta, mientras que Token Ring usaba un token para permitir la transmisión. Ambas fueron superadas por Ethernet, que resultó más fácil de instalar, más rápida y más compatible con diferentes dispositivos.</p>
+<div class="cards">
+<div class="card">
+<h3>Ethernet</h3>
+<p>Es el estándar dominante en redes cableadas. Utiliza protocolos como CSMA/CD para coordinar el acceso al medio y evitar colisiones, y es el más usado en redes LAN modernas.</p>
+</div>
+<div class="card">
+<h3>ARCNET y Token Ring</h3>
+<p>Son arquitecturas históricas que ayudan a entender la evolución de las redes. ARCNET usaba un bus compartido y Token Ring enviaba un permiso de transmisión por turno.</p>
+</div>
+</div>
+<div class="content-highlight">
+<p>Gracias a esta experiencia histórica, PowerUP elige siempre estándares actuales como Ethernet y cableado estructurado, que ofrecen rendimiento y soporte a futuro.</p>
+</div>
+</section>
+
+<section class="content-section" id="red-tipo-estrella">
+<h2>Red tipo estrella</h2>
+<p>La topología estrella conecta todos los nodos a un punto central (switch o hub). Es la opción más recomendable cuando no se van a conectar más de cinco dispositivos, ya que facilita el monitoreo del tráfico y evita que la falla de un cable interrumpa al resto de la red.</p>
+</section>
+
+<section class="content-section" id="instalacion-pequena">
+<h2>Pasos para la instalación de una red pequeña</h2>
+<ol>
+<li><strong>Planificación:</strong> realizar un bosquejo del recorrido de los cables y ubicar el concentrador o rack.</li>
+<li><strong>Canalización:</strong> medir las paredes e instalar las canaletas o bandejas para el cableado.</li>
+<li><strong>Tendido:</strong> pasar el cable de red por las canaletas sin doblarlo más de 45° para evitar degradación de señal.</li>
+<li><strong>Conexionado:</strong> armar las fichas RJ45 en los terminales con una pinza crimpeadora.</li>
+<li><strong>Puestos de trabajo:</strong> instalar rosetas con conectores RJ45 hembra en cada terminal.</li>
+<li><strong>Montaje y verificación:</strong> amurar el concentrador y verificar la conexión con un LAN tester para asegurar que no haya cables mal armados.</li>
+ </ol>
+</section>
+
+<section class="content-section" id="parametros-config">
+<h2>Parámetros de configuración</h2>
+<p>Para que las máquinas se reconozcan en la red local, es necesario configurar al menos dos datos básicos:</p>
+<ul>
+<li><strong>Nombre del equipo:</strong> debe ser único para cada PC.</li>
+<li><strong>Nombre del Grupo de Trabajo:</strong> debe ser exactamente el mismo para todas las computadoras que conforman la red.</li>
+</ul>
+</section>
+
+<section class="content-section" id="elementos-red">
+<h2>Elementos y herramientas necesarias</h2>
+<p>Para armar una red pequeña se requieren componentes físicos y herramientas específicas:</p>
+<ul>
+<li><strong>Componentes:</strong> cable UTP categoría 5 (o superior), fichas RJ45, capuchones, rosetas, modem, router y switch.</li>
+<li><strong>Herramientas:</strong> pinza crimpeadora, tester de red (LANtest) y herramientas básicas para montaje.</li>
+</ul>
+</section>
+
+<section class="content-section" id="inalambrico-vs-cableado">
+<h2>Inalámbrico vs cableado (transmisiones)</h2>
+<p>Ambas opciones tienen ventajas: la red cableada ofrece mayor velocidad y estabilidad, mientras que la inalámbrica aporta movilidad. Es falso que las redes inalámbricas reemplacen totalmente a las cableadas; suelen ser complementarias en entornos modernos.</p>
+<ul>
+<li><strong>Red cableada:</strong> velocidades superiores a 100 Mbps y hasta 1 Gbps; más estable y menos propensa a interferencias.</li>
+<li><strong>Red inalámbrica:</strong> utiliza el aire como medio; velocidades máximas comunes (en redes tradicionales) alrededor de 108 Mbps, con mayor dependencia del entorno físico.</li>
+</ul>
+</section>
+
+<section class="content-section" id="cableado">
+<h2>Cableado estructurado</h2>
+<p>El cableado estructurado es la base de una red profesional. Implica planificar los recorridos de cable, utilizar canaletas adecuadas y evitar doblar los cables más de 45° para mantener la integridad de la señal.</p>
+<p>Los conectores RJ45 se arman con pinzas crimpeadoras y luego se verifican con un LAN tester para asegurar que cada par funcione correctamente. Además, se suele identificar cada punto y mantener orden en los gabinetes y paneles de conexión.</p>
+<p><strong>¿Para qué sirve el cableado estructurado?</strong> Es un sistema organizado de cables y conectores diseñado para que la red sea ordenada, escalable y fácil de mantener. Minimiza tiempos y costos, optimiza recursos y permite identificar rápidamente los puntos de red, facilitando futuras ampliaciones sin desorden.</p>
+<div class="card">
+<h3>Normas RJ45</h3>
+<p><strong>T568A:</strong> Blanco/Verde - Verde - Blanco/Naranja - Azul - Blanco/Azul - Naranja - Blanco/Marrón - Marrón.<br><strong>T568B:</strong> Blanco/Naranja - Naranja - Blanco/Verde - Azul - Blanco/Azul - Verde - Blanco/Marrón - Marrón.</p>
+</div>
+<div class="cards">
+<div class="card">
+<h3>Instalación profesional</h3>
+<p>Planificamos el espacio, pasamos los cables por canaletas ordenadas y respetamos las distancias máximas entre puntos de red.</p>
+</div>
+<div class="card">
+<h3>Configuración</h3>
+<p>Cada equipo recibe un nombre único y se integra en el mismo grupo de trabajo, lo que facilita la comunicación interna y la gestión de recursos.</p>
+</div>
+</div>
+<div class="content-highlight">
+<p>En Argentina, la norma más usada es T568B, pero lo más importante es la consistencia. PowerUP sigue estándares TIA/EIA para garantizar redes confiables y fáciles de mantener.</p>
+</div>
+</section>
+
+<section class="content-section reflection" id="tecnologia-sociedad">
+<h2>Tecnología y sociedad</h2>
+<p>Las redes digitales transformaron la forma en que trabajamos, aprendemos y nos comunicamos. En PowerUP entendemos que el crecimiento tecnológico debe ir acompañado de responsabilidad: seguridad, privacidad y uso ético de los datos son parte de nuestras soluciones.</p>
+</section>
+</main>
+
+<footer>
+<div class="site-footer">
+<div class="footer-content">
+<div>
+<h3>PowerUP</h3>
+<p>Soluciones informáticas para hogares, comercios y empresas con enfoque en rendimiento y soporte.</p>
+</div>
+<div>
+<h4>Enlaces rápidos</h4>
+<p><a href="index.html">Inicio</a><br><a href="servicios.html">Servicios</a><br><a href="contacto.html">Contacto</a></p>
+</div>
+<div>
+<h4>Contacto</h4>
+<p>contacto@poweruptech.com<br>+54 379 456-7890</p>
+</div>
+</div>
+<div class="footer-copy">© 2026 PowerUP - Todos los derechos reservados.</div>
+</div>
+</footer>
+<div class="scroll-top"><a href="#top" aria-label="Subir al inicio">↑</a></div>
+<script>
+const scrollTopButton = document.querySelector('.scroll-top');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 220) {
+    scrollTopButton.classList.add('show');
+  } else {
+    scrollTopButton.classList.remove('show');
+  }
+});
+</script>
+</body>
+</html>
